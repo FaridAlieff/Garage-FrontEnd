@@ -9,6 +9,10 @@
 .product-list-breadcump span {
   color: #929292;
   transition: 0.3s;
+  font-size: 16px !important;
+}
+.product-list-breadcump a {
+  font-size: 16px !important;
 }
 .product-list-breadcump a:hover {
   transition: 0.3s;

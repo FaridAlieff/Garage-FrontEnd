@@ -98,3 +98,61 @@ function scrollToTop() {
         }
     }, 0);
 }
+
+function changeContent(type) {
+    var contentBox = document.getElementById("contentBox-about");
+    switch(type) {
+        case 'about':
+            contentBox.innerHTML = "Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.  Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel, suscipit ultrices nunc. Cras ipsum dolor, eleifend et nisl vel, tempor molestie nibh.";
+            break;
+        case 'services':
+            contentBox.innerHTML = "Cras ipsum dolor, eleifend et nisl vel, tempor molestie nibh. In hac habitasse platea dictumst. Proin nec blandit ligula. Donec volutpat leo turpis, vel accumsan nunc convallis id. Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum.";
+            break;
+        case 'history':
+            contentBox.innerHTML = "Donec volutpat leo turpis, vel accumsan nunc convallis id. Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Cras ipsum dolor, eleifend et nisl vel, tempor molestie nibh. In hac habitasse platea dictumst. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum primis. Proin nec. ";
+            break;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    let testimonials = [
+        {
+            text: "Cum sociis natoque penatibus magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis. Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci aliquenenan penatibus dis parturienmontes ultricies. ",
+            author: "John Doe",
+            role: "CEO, Company A"
+        },
+        {
+            text: "I've never seen anything like this before.",
+            author: "Jane Smith",
+            role: "Developer, Company B"
+        },
+    ];
+
+    let currentTestimonialIndex = 0;
+
+    function updateTestimonial() {
+        document.querySelector('.testimonial-text').textContent = testimonials[currentTestimonialIndex].text;
+        document.querySelector('.testimonial-author').textContent = testimonials[currentTestimonialIndex].author;
+        document.querySelector('.testimonial-role').textContent = testimonials[currentTestimonialIndex].role;
+    }
+
+    document.querySelector('.testimonial-prev').addEventListener('click', function(event) {
+        event.preventDefault();
+        currentTestimonialIndex--;
+        if (currentTestimonialIndex < 0) {
+            currentTestimonialIndex = testimonials.length - 1;
+        }
+        updateTestimonial();
+    });
+
+    document.querySelector('.testimonial-next').addEventListener('click', function(event) {
+        event.preventDefault();
+        currentTestimonialIndex++;
+        if (currentTestimonialIndex > testimonials.length - 1) {
+            currentTestimonialIndex = 0;
+        }
+        updateTestimonial();
+    });
+
+    updateTestimonial();    
+});
