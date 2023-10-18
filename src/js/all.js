@@ -27,7 +27,7 @@ fetch("../src/json/db.json")
                 <span>${e.count} x $${e.price}</span>
             </div>
             <div class="close-icon">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-xmark" data-id="${e.id}" onclick="Delete(this)"></i>
             </div>
         </div>
        
@@ -42,10 +42,21 @@ fetch("../src/json/db.json")
             <a href="" class="btn-checkout">CHECKOUT</a>
         </div>
     `
-    $("#Cart .submenu ul").html(html);
+    $(".navbar-right .submenu ul").html(html);
 })
 
+function Delete(e){
+    let basket =[];
+    JSON.parse(localStorage.getItem("basket")).forEach(p=>{
+        if(p.id!=e.getAttribute("data-id")){
+            basket.push(p);
+        }
 
+    })
+    localStorage.setItem("basket",JSON.stringify(basket))
+    e.parentElement.parentElement.remove();
+
+}
 
 //Sidebar slider menu
 let sliderMenu = document.querySelector(".desktop-sidebar-slider-menu");

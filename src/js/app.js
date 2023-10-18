@@ -97,6 +97,35 @@ fetch("../src/json/db.json")
             })
             document.querySelector("#Cart").innerHTML = `(${sum})$`;
             localStorage.setItem("basket",JSON.stringify(basket))
+            let products = data.products;
+
+            let html = '';
+            basket.forEach(e => {
+                html+=`
+                <div class="card-product-area" style="padding: 10px 10px;">
+                    <a href=""><img src="${products[e.id].imgs[0]}" height="100" width="100" alt="">                            </a>
+                    <div class="cart-product-info">
+                        <a class="a-title-product">${products[e.id].title}</a>                                
+                        <span>${e.count} x $${e.price}</span>
+                    </div>
+                    <div class="close-icon">
+                        <i class="fa-solid fa-xmark" data-id="${e.id}" onclick="Delete(this)"></i>
+                    </div>
+                </div>
+            
+                `;
+            });
+            html+=`
+                <div class="total-price-viewcart" style="padding: 10px 10px;">
+                    <h5>TOTAL:</h5><span class="total-span">${sum}$</span>
+                </div>
+                <div class="btns-viewcart">
+                    <a href="./cart.html" class="btn-viewcart">VIEW CART</a>
+                    <a href="" class="btn-checkout">CHECKOUT</a>
+                </div>
+            `
+            $(".navbar-right .submenu ul").html(html);
+
             })
 
         })
@@ -136,6 +165,32 @@ fetch("../src/json/db.json")
             })
             document.querySelector("#Cart").innerHTML = `(${sum})$`;
             localStorage.setItem("basket",JSON.stringify(basket))
+            let html = '';
+            basket.forEach(e => {
+                html+=`
+                <div class="card-product-area" style="padding: 10px 10px;">
+                    <a href=""><img src="${products[e.id].imgs[0]}" height="100" width="100" alt="">                            </a>
+                    <div class="cart-product-info">
+                        <a class="a-title-product">${products[e.id].title}</a>                                
+                        <span>${e.count} x $${e.price}</span>
+                    </div>
+                    <div class="close-icon">
+                        <i class="fa-solid fa-xmark" data-id="${e.id}" onclick="Delete(this)"></i>
+                    </div>
+                </div>
+            
+                `;
+            });
+            html+=`
+                <div class="total-price-viewcart" style="padding: 10px 10px;">
+                    <h5>TOTAL:</h5><span class="total-span">${sum}$</span>
+                </div>
+                <div class="btns-viewcart">
+                    <a href="./cart.html" class="btn-viewcart">VIEW CART</a>
+                    <a href="" class="btn-checkout">CHECKOUT</a>
+                </div>
+            `
+            $(".navbar-right .submenu ul").html(html);
 
         })
     })
