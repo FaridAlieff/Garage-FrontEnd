@@ -391,6 +391,9 @@ a:hover {
 }
 .desktop-sidebar-slider-menu h6 {
   font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
   color: white;
   text-transform: uppercase;
 }
@@ -405,7 +408,8 @@ a:hover {
   cursor: pointer;
 }
 .desktop-sidebar-slider-menu span.close-icon i {
-  font-size: 24px;
+  font-size: 14px;
+  font-weight: 200;
   color: aliceblue;
 }
 .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner {
@@ -416,7 +420,8 @@ a:hover {
 .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .call-to-action {
   color: #929292;
   font-size: 24px;
-  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-weight: 200;
   margin-top: 2rem;
   display: block;
 }

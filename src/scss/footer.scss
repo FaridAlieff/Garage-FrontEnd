@@ -457,6 +457,9 @@ padding-left: 10px;
 
     h6 {
         font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
         color: white;
         text-transform: uppercase;
     }
@@ -473,7 +476,8 @@ padding-left: 10px;
         }
 
         i {
-            font-size: 24px;
+            font-size: 14px;
+            font-weight: 200;
             color: aliceblue;
         }
     }
@@ -486,7 +490,8 @@ padding-left: 10px;
         .call-to-action {
             color: #929292;
             font-size: 24px;
-            font-weight: 300;
+            letter-spacing: 1.5px;
+            font-weight: 200;
             margin-top: 2rem;
             display: block;
         }
