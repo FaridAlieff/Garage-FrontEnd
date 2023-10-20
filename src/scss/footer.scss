@@ -22,7 +22,9 @@ footer {
         .footer-desktop-section {
             width: 25%;
             h4 {
-                font-weight: 600;    
+                font-size: 16px;
+                margin-top: -8px;
+                font-weight: 500;    
                 color: #080808;        
                 text-transform: uppercase;
                 margin-bottom: 1rem;
@@ -45,6 +47,7 @@ footer {
                         color: #929292;                        
                         transition: 0.5s;
                         font-size: 14px;
+                        font-weight: 300;
 
                         &:hover {
                             color: #b5b5b5;

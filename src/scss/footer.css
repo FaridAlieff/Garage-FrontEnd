@@ -23,7 +23,9 @@ footer .footer-section-container .footer-desktop-section {
   width: 25%;
 }
 footer .footer-section-container .footer-desktop-section h4 {
-  font-weight: 600;
+  font-size: 16px;
+  margin-top: -8px;
+  font-weight: 500;
   color: #080808;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -45,6 +47,7 @@ footer .footer-section-container .footer-desktop-section ul li a {
   color: #929292;
   transition: 0.5s;
   font-size: 14px;
+  font-weight: 300;
 }
 footer .footer-section-container .footer-desktop-section ul li a ion-icon {
   display: none;
