@@ -50,6 +50,7 @@ footer .footer-section-container .footer-desktop-section ul li a ion-icon {
 footer .footer-section-container .footer-desktop-section ul li a:hover {
   color: #b5b5b5;
   display: flex;
+  align-items: center;
   padding-left: 17px;
   left: 0;
 }
