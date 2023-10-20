@@ -34,6 +34,9 @@ footer {
                 li{
                     width: fit-content;
                     a{
+                        ion-icon{
+                            display: none;
+                        }
                         width: fit-content;
                         color: #929292;                        
                         transition: 0.25s;
@@ -41,8 +44,13 @@ footer {
 
                         &:hover {
                             color: #b5b5b5;
+                            display: flex;
                             padding-left: 17px;
                             left: 0;
+
+                            ion-icon{
+                                display: block;
+                            }
                         }
 
                         &:hover::after {

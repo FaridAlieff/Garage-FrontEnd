@@ -44,10 +44,17 @@ footer .footer-section-container .footer-desktop-section ul li a {
   transition: 0.25s;
   font-size: 14px;
 }
+footer .footer-section-container .footer-desktop-section ul li a ion-icon {
+  display: none;
+}
 footer .footer-section-container .footer-desktop-section ul li a:hover {
   color: #b5b5b5;
+  display: flex;
   padding-left: 17px;
   left: 0;
+}
+footer .footer-section-container .footer-desktop-section ul li a:hover ion-icon {
+  display: block;
 }
 footer .footer-section-container .footer-desktop-section ul li a:hover::after {
   left: 0;
