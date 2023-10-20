@@ -32,34 +32,40 @@ footer .footer-section-container .footer-desktop-section h4 {
 footer .footer-section-container .footer-desktop-section ul {
   width: -moz-fit-content;
   width: fit-content;
+  transition: 0.5s;
 }
 footer .footer-section-container .footer-desktop-section ul li {
   width: -moz-fit-content;
   width: fit-content;
+  transition: 0.5s;
 }
 footer .footer-section-container .footer-desktop-section ul li a {
   width: -moz-fit-content;
   width: fit-content;
   color: #929292;
-  transition: 0.25s;
+  transition: 0.5s;
   font-size: 14px;
 }
 footer .footer-section-container .footer-desktop-section ul li a ion-icon {
   display: none;
+  transition: 0.5s;
 }
 footer .footer-section-container .footer-desktop-section ul li a:hover {
   color: #b5b5b5;
   display: flex;
   align-items: center;
-  padding-left: 17px;
+  padding-left: 10px;
   left: 0;
+  transition: 0.5s;
 }
 footer .footer-section-container .footer-desktop-section ul li a:hover ion-icon {
   display: block;
+  transition: 0.5s;
 }
 footer .footer-section-container .footer-desktop-section ul li a:hover::after {
   left: 0;
   opacity: 0.3;
+  transition: 0.5s;
 }
 footer .footer-section-container .footer-desktop-section ul li a::after {
   content: "\e87a";
@@ -78,6 +84,7 @@ footer .footer-section-container .footer-desktop-section ul li a::after {
   position: absolute;
   top: 4px;
   vertical-align: middle;
+  transition: 0.5s;
 }
 footer .copyright-section-container {
   display: flex;
@@ -162,7 +169,9 @@ footer #scrollUpButton:hover {
 .header-div #header .navbar-left ul {
   list-style: none;
   display: flex;
+  transition: 0.5s;
   padding-left: 22px;
+  transition: 0.5s;
 }
 .header-div #header .navbar-left ul li {
   position: relative;
@@ -170,6 +179,7 @@ footer #scrollUpButton:hover {
   height: 96px;
   display: flex;
   align-items: center;
+  transition: 0.5s;
 }
 .header-div #header .navbar-left ul li .submenu {
   transition: 0.5s;
@@ -205,6 +215,7 @@ footer #scrollUpButton:hover {
 .header-div #header .navbar-left ul li ul {
   padding: 10px !important;
   display: block;
+  transition: 0.5s;
 }
 .header-div #header .navbar-left ul li:hover .submenu {
   height: auto;
