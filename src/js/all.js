@@ -98,7 +98,7 @@ function scrollToTop() {
         }
     }, 0);
 }
-
+//about page tab menu
 function changeContent(type) {
     var contentBox = document.getElementById("contentBox-about");
     switch(type) {
