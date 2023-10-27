@@ -238,6 +238,62 @@ footer #scrollUpButton:hover {
   color: #929292;
   transition: 0.5s;
 }
+.header-div #header .header-mb {
+  padding-left: 30px;
+  height: 96px;
+  align-items: center;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+}
+.header-div #header .header-mb .drop .drop-btn {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Catamaran, sans-serif;
+  position: relative;
+  float: right;
+}
+.header-div #header .header-mb .drop .drop-btn .submenu2 {
+  height: 100%;
+  width: 40%;
+  background-color: #111;
+  color: #fff;
+  position: fixed;
+  right: -40%;
+  top: 0;
+  padding: 3rem 3rem;
+  transition: 0.5s;
+  text-align: left;
+}
+.header-div #header .header-mb .drop .drop-btn .submenu2 .close span.close-icon {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  background: transparent;
+  border: none;
+}
+.header-div #header .header-mb .drop .drop-btn .submenu2 .close span.close-icon i {
+  font-size: 24px;
+  color: aliceblue;
+}
+.header-div #header .header-mb .drop .drop-btn .submenu2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header-div #header .header-mb .drop .drop-btn .submenu2 ul li {
+  font-size: 24px;
+}
+.header-div #header .header-mb .drop .drop-btn .submenu2 ul li i {
+  font-size: 15px;
+}
+.header-div #header .header-mb .drop .drop-btn .submenu2 ul li ul {
+  transition: 0.3s;
+  height: 0;
+  overflow: hidden;
+}
 
 .navbar-center img {
   width: 106px;
@@ -525,4 +581,19 @@ a:hover {
 .desktop-sidebar-slider-menu .desktop-sidebar-slider-bottom .social-buttons .social-button:hover {
   color: #afafaf;
   transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .header-div #header {
+    padding: 3rem 6rem;
+  }
+  .header-div #header .header-mb {
+    display: flex;
+  }
+  .header-div #header .navbar-left {
+    display: none;
+  }
+  .header-div #header .navbar-right {
+    display: none;
+  }
 }/*# sourceMappingURL=footer.css.map */
