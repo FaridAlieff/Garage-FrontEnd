@@ -9,6 +9,10 @@
 .product-list-breadcump span {
   color: #929292;
   transition: 0.3s;
+  font-size: 16px !important;
+}
+.product-list-breadcump a {
+  font-size: 16px !important;
 }
 .product-list-breadcump a:hover {
   transition: 0.3s;
@@ -308,6 +312,7 @@
   text-transform: uppercase;
   font-family: Catamaran;
   font-size: 12px;
+  padding-top: 10px;
   letter-spacing: 2px;
   transition: 0.5s;
 }
@@ -445,7 +450,7 @@
   padding-left: 60px;
   letter-spacing: 4px;
   font-weight: 600;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .popUp .product-card .price {
   font-family: Montserrat;
