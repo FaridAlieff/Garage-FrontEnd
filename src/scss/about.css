@@ -5,49 +5,49 @@
   box-sizing: border-box;
 }
 
-.about-us-content {
-  padding-top: 50px;
+.aboutus-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-us-content .image-button-wrapper {
+.aboutus-content .image-button-wrapper {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.about-us-content .buttons {
+.aboutus-content .buttons {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   width: 50%;
-  padding-left: 1em;
 }
-.about-us-content button {
+.aboutus-content button {
   font-family: Catamaran, sans-serif;
   font-size: 12px;
+  padding: 6px 10px;
   border: 1px solid black;
   border-radius: 0px;
-  padding: 5px 55px;
+  padding: 6px 50px;
+  line-height: 47px;
   transition: 0.5s;
 }
-.about-us-content button:hover,
-.about-us-content button:active {
+.aboutus-content button:hover,
+.aboutus-content button:active {
   background-color: black;
   color: white;
   transition: 0.5s;
 }
-.about-us-content #contentBox-about {
+.aboutus-content #contentBox-about {
   font-family: catamaran, sans-serif;
   border-radius: 0px;
   border: none;
   color: #929292;
   margin-top: 20px;
 }
-.about-us-content a {
+.aboutus-content a {
   text-decoration: none;
   color: #929292;
   font-size: 12px;
-  padding-left: 22px;
 }
 
 .product .addtocart a {
@@ -100,10 +100,6 @@
   font-family: Catamaran, sans-serif;
   margin-top: 30px;
   color: #fff;
-}
-
-.aboutus-content {
-  display: flex;
 }
 
 .about-content .tab a {

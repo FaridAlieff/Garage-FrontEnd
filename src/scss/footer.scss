@@ -22,9 +22,7 @@ footer {
         .footer-desktop-section {
             width: 25%;
             h4 {
-                font-size: 16px;
-                margin-top: -8px;
-                font-weight: 500;    
+                font-weight: 600;    
                 color: #080808;        
                 text-transform: uppercase;
                 margin-bottom: 1rem;
@@ -33,43 +31,23 @@ footer {
 
             ul{
                 width: fit-content;
-                transition: 0.5s;
                 li{
                     width: fit-content;
-                    transition: 0.5s;
-
                     a{
-                        ion-icon{
-                            display: none;
-                            transition: 0.5s;
-                        }
                         width: fit-content;
                         color: #929292;                        
-                        transition: 0.5s;
+                        transition: 0.25s;
                         font-size: 14px;
-                        font-weight: 300;
 
                         &:hover {
                             color: #b5b5b5;
-                            display: flex;
-                            align-items: center;
-                            padding-left: 10px;
+                            padding-left: 17px;
                             left: 0;
-                            transition: 0.5s;
-
-
-                            ion-icon{
-                                display: block;
-                                transition: 0.5s;
-
-                            }
                         }
 
                         &:hover::after {
                             left: 0;
                             opacity:.3;
-                            transition: 0.5s;
-
                         }
 
                         &::after {
@@ -89,8 +67,6 @@ footer {
                             position: absolute;
                             top: 4px;
                             vertical-align: middle;
-                            transition: 0.5s;
-
                         }
                     }
                 }
@@ -195,8 +171,6 @@ footer {
     
                 list-style: none;
                 display: flex;
-                transition: 0.5s;
-
     
     
                 li {
@@ -205,8 +179,6 @@ footer {
                     height: 96px;
                     display: flex;
                     align-items: center;
-                    transition: 0.5s;
-
     
                     .submenu {
                         ion-icon {
@@ -248,8 +220,6 @@ footer {
                     ul {
                         padding: 10px !important;
                         display: block;
-                        transition: 0.5s;
-
                     }
     
     
@@ -264,8 +234,6 @@ footer {
                 }
     
                 padding-left: 22px;
-                transition: 0.5s;
-
     
                 a {
                     color: #000;
@@ -285,6 +253,70 @@ footer {
     
     
     
+        }
+
+        .header-mb{
+            //display: none;
+            padding-left: 30px;
+            height: 96px;
+            align-items: center;
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            .drop{
+                .drop-btn {
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    font-family: Catamaran, sans-serif;
+                    position: relative;
+                    float: right;
+                    .submenu2 {                      
+                        height: 100%;
+                        width: 40%;
+                        background-color: #111;
+                        color: #fff;
+                        position: fixed;
+                        right: -40%;
+                        top: 0;
+                        padding: 3rem 3rem;
+                        transition: .5s;text-align: left;
+                        .close{
+                            span.close-icon {
+                                position: absolute;
+                                top: 38px;
+                                right: 38px;
+                                background: transparent;
+                                border: none;
+                        
+                                i {
+                                    font-size: 24px;
+                                    color: aliceblue;
+                                }
+                            }
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                                li{
+                                    font-size: 24px;
+                                    i{
+                                        font-size: 15px;
+                                    }
+                                    ul{
+                                        transition: 0.3s;
+                                        height: 0;
+                                        overflow: hidden;
+                                    }
+                                }
+                            
+                        }
+                    }
+                }
+    
+            }
         }
     
     }
@@ -342,7 +374,7 @@ footer {
             height: auto;
             opacity: 1;
             transition: 0.5s;
-            width: 16rem;
+            width: 15rem;
             
         }
 
@@ -489,9 +521,6 @@ padding-left: 10px;
 
     h6 {
         font-size: 12px;
-        line-height: 18px;
-        font-weight: 300;
-        letter-spacing: 2px;
         color: white;
         text-transform: uppercase;
     }
@@ -508,8 +537,7 @@ padding-left: 10px;
         }
 
         i {
-            font-size: 14px;
-            font-weight: 200;
+            font-size: 24px;
             color: aliceblue;
         }
     }
@@ -522,8 +550,7 @@ padding-left: 10px;
         .call-to-action {
             color: #929292;
             font-size: 24px;
-            letter-spacing: 1.5px;
-            font-weight: 200;
+            font-weight: 300;
             margin-top: 2rem;
             display: block;
         }
@@ -625,6 +652,27 @@ padding-left: 10px;
     }
 }
 
+
+@media (max-width: 768px){
+
+    .header-div{
+        
+        #header {
+            padding: 3rem 6rem;
+
+            .header-mb{
+                display: flex;
+                
+            }
+            .navbar-left{
+                display: none;
+            }
+            .navbar-right{
+                display: none;
+            }
+        }
+    }
+}
 
 
     
