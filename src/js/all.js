@@ -70,12 +70,13 @@ function closeNav() {
     sliderMenu.style.right = "-86vh"
 }
 
-let sub = document.querySelector(".submenu2")
+ let sub = document.querySelector(".submenu2");
 document.querySelector(".header-mb").addEventListener("click",function(){
-    sub.style.right = "0";
+    sub.style.transform = " translateX(0)";
 })
 document.querySelector(".header-mb .close-icon").addEventListener("click",function(){
-    sub.style.right = "-40%";
+    event.stopPropagation();
+    sub.style.transform = "translateX(101%)";
 
 })
 document.querySelectorAll(".header-mb li").forEach(e =>{
